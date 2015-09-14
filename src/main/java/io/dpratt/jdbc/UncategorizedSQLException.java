@@ -47,6 +47,7 @@ public class UncategorizedSQLException extends UncategorizedDataAccessException 
 
 	/**
 	 * Return the underlying SQLException.
+	 * @return the exception's underlying cause
 	 */
 	public SQLException getSQLException() {
 		return (SQLException) getCause();
@@ -54,6 +55,7 @@ public class UncategorizedSQLException extends UncategorizedDataAccessException 
 
 	/**
 	 * Return the SQL that led to the problem.
+	 * @return the problematic SQL
 	 */
 	public String getSql() {
 		return this.sql;

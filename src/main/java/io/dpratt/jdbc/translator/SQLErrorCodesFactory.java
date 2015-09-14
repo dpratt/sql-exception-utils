@@ -54,6 +54,7 @@ public class SQLErrorCodesFactory {
 
     /**
      * Return the singleton instance.
+     * @return the instance
      */
     public static SQLErrorCodesFactory getInstance() {
         return instance;

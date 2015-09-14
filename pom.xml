@@ -13,28 +13,31 @@
       <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
+    <scm>
+        <connection>scm:git:https://github.com/dpratt/sql-exception-utils.git</connection>
+        <developerConnection>scm:git:git@github.com:dpratt/sql-exception-utils.git</developerConnection>
+        <url>https://github.com/dpratt/sql-exception-utils</url>
+        <tag>HEAD</tag>
+    </scm>
+
+    <distributionManagement>
+        <repository>
+            <id>bintray-dpratt</id>
+            <url>https://api.bintray.com/maven/dpratt/maven/sql-exception-utils</url>
+        </repository>
+    </distributionManagement>
+
     <dependencies>
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
-            <version>1.7.10</version>
+            <version>1.7.12</version>
         </dependency>
 
     </dependencies>
 
     <build>
         <plugins>
-
-            <!-- Tell the Java compiler plugin to target Java 1.6. -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.2</version>
-                <configuration>
-                    <source>1.6</source>
-                    <target>1.6</target>
-                </configuration>
-            </plugin>
 
             <!-- Generate and attach source JAR as part of all builds. -->
             <plugin>

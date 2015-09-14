@@ -31,6 +31,7 @@ public abstract class AbstractFallbackSQLExceptionTranslator implements SQLExcep
 
     /**
      * Return the fallback exception translator, if any.
+     * @return the translator
      */
     public SQLExceptionTranslator getFallbackTranslator() {
         return this.fallbackTranslator;

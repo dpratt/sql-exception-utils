@@ -71,6 +71,7 @@ public class SQLErrorCodeSQLExceptionTranslator extends AbstractFallbackSQLExcep
     /**
      * Return the error codes used by this translator.
      * Usually determined via a DataSource.
+     * @return the error codes instance
      */
     public SQLErrorCodes getSqlErrorCodes() {
         return this.sqlErrorCodes;

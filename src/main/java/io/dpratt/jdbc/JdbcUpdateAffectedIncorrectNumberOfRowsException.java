@@ -49,6 +49,7 @@ public class JdbcUpdateAffectedIncorrectNumberOfRowsException extends IncorrectU
 
 	/**
 	 * Return the number of rows that should have been affected.
+	 * @return the expected row count
 	 */
 	public int getExpectedRowsAffected() {
 		return this.expected;
@@ -56,6 +57,7 @@ public class JdbcUpdateAffectedIncorrectNumberOfRowsException extends IncorrectU
 
 	/**
 	 * Return the number of rows that have actually been affected.
+     * @return the actual effected count
 	 */
 	public int getActualRowsAffected() {
 		return this.actual;
