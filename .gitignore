@@ -1,0 +1,14 @@
+.idea
+*.iws
+*.ipr
+*.iml
+
+.classpath
+.project
+.cache
+.settings
+
+target/
+worksheets
+
+local.sbt
